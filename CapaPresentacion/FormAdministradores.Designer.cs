@@ -35,6 +35,7 @@
             this.btnEditarF2 = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdministradores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,12 +132,23 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "______________________________";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(315, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(201, 22);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "ADMINISTRADORES";
+            // 
             // FormAdministradores
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(783, 601);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnEditarF2);
@@ -163,5 +175,6 @@
         private System.Windows.Forms.Button btnNuevo;
         public System.Windows.Forms.DataGridView dataGridViewAdministradores;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

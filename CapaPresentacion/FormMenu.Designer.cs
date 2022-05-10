@@ -30,10 +30,12 @@ namespace CapaPresentacion
         private void InitializeComponent()
         {
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnClientes = new System.Windows.Forms.Button();
             this.btnAdministrador = new System.Windows.Forms.Button();
             this.btnReserva = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTipoHabitacion = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnHotel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,13 +45,13 @@ namespace CapaPresentacion
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelArticulos = new System.Windows.Forms.Panel();
             this.panelTitulo = new System.Windows.Forms.Panel();
+            this.lblCerrarSesion = new System.Windows.Forms.Label();
             this.pictureBoxMinimizar = new System.Windows.Forms.PictureBox();
             this.pictureBoxIconoCerrar = new System.Windows.Forms.PictureBox();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTituloPanelCentral = new System.Windows.Forms.Label();
-            this.lblCerrarSesion = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimizar)).BeginInit();
@@ -61,10 +63,12 @@ namespace CapaPresentacion
             // panelSideMenu
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.panelSideMenu.Controls.Add(this.panel6);
+            this.panelSideMenu.Controls.Add(this.btnClientes);
             this.panelSideMenu.Controls.Add(this.btnAdministrador);
             this.panelSideMenu.Controls.Add(this.btnReserva);
             this.panelSideMenu.Controls.Add(this.btnUsuarios);
-            this.panelSideMenu.Controls.Add(this.button1);
+            this.panelSideMenu.Controls.Add(this.btnTipoHabitacion);
             this.panelSideMenu.Controls.Add(this.panel5);
             this.panelSideMenu.Controls.Add(this.btnHotel);
             this.panelSideMenu.Controls.Add(this.panel1);
@@ -80,6 +84,28 @@ namespace CapaPresentacion
             this.panelSideMenu.TabIndex = 0;
             this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
             this.panelSideMenu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelSideMenu_MouseMove);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.IndianRed;
+            this.panel6.Location = new System.Drawing.Point(2, 391);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(14, 52);
+            this.panel6.TabIndex = 19;
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnClientes.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClientes.Location = new System.Drawing.Point(12, 390);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(158, 52);
+            this.btnClientes.TabIndex = 18;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click_1);
             // 
             // btnAdministrador
             // 
@@ -107,7 +133,7 @@ namespace CapaPresentacion
             this.btnReserva.TabIndex = 3;
             this.btnReserva.Text = "Reserva";
             this.btnReserva.UseVisualStyleBackColor = true;
-            this.btnReserva.Click += new System.EventHandler(this.btnClientes_Click);
+            this.btnReserva.Click += new System.EventHandler(this.btnReserva_Click);
             // 
             // btnUsuarios
             // 
@@ -115,7 +141,7 @@ namespace CapaPresentacion
             this.btnUsuarios.FlatAppearance.BorderSize = 0;
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnUsuarios.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnUsuarios.Location = new System.Drawing.Point(16, 393);
+            this.btnUsuarios.Location = new System.Drawing.Point(12, 451);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(158, 52);
             this.btnUsuarios.TabIndex = 17;
@@ -123,18 +149,19 @@ namespace CapaPresentacion
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
-            // button1
+            // btnTipoHabitacion
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(16, 216);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 52);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Tipo Habitacion";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTipoHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTipoHabitacion.FlatAppearance.BorderSize = 0;
+            this.btnTipoHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnTipoHabitacion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTipoHabitacion.Location = new System.Drawing.Point(16, 216);
+            this.btnTipoHabitacion.Name = "btnTipoHabitacion";
+            this.btnTipoHabitacion.Size = new System.Drawing.Size(158, 52);
+            this.btnTipoHabitacion.TabIndex = 15;
+            this.btnTipoHabitacion.Text = "Tipo Habitacion";
+            this.btnTipoHabitacion.UseVisualStyleBackColor = true;
+            this.btnTipoHabitacion.Click += new System.EventHandler(this.btnTipoHabitacion_Click);
             // 
             // panel5
             // 
@@ -169,7 +196,7 @@ namespace CapaPresentacion
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.IndianRed;
-            this.panel4.Location = new System.Drawing.Point(3, 393);
+            this.panel4.Location = new System.Drawing.Point(2, 451);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(14, 52);
             this.panel4.TabIndex = 10;
@@ -226,6 +253,18 @@ namespace CapaPresentacion
             this.panelTitulo.TabIndex = 1;
             this.panelTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseMove);
             // 
+            // lblCerrarSesion
+            // 
+            this.lblCerrarSesion.AutoSize = true;
+            this.lblCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblCerrarSesion.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCerrarSesion.Location = new System.Drawing.Point(3, 9);
+            this.lblCerrarSesion.Name = "lblCerrarSesion";
+            this.lblCerrarSesion.Size = new System.Drawing.Size(108, 15);
+            this.lblCerrarSesion.TabIndex = 19;
+            this.lblCerrarSesion.Text = "CERRAR SESION";
+            this.lblCerrarSesion.Click += new System.EventHandler(this.lblCerrarSesion_Click);
+            // 
             // pictureBoxMinimizar
             // 
             this.pictureBoxMinimizar.Image = global::CapaPresentacion.Properties.Resources.minimize__1_;
@@ -271,7 +310,7 @@ namespace CapaPresentacion
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources._2085;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources._20851;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(783, 601);
@@ -281,23 +320,10 @@ namespace CapaPresentacion
             // 
             // lblTituloPanelCentral
             // 
-            this.lblTituloPanelCentral.AutoSize = true;
-            this.lblTituloPanelCentral.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTituloPanelCentral.Location = new System.Drawing.Point(111, 37);
+            this.lblTituloPanelCentral.Location = new System.Drawing.Point(0, 0);
             this.lblTituloPanelCentral.Name = "lblTituloPanelCentral";
-            this.lblTituloPanelCentral.Size = new System.Drawing.Size(585, 42);
-            this.lblTituloPanelCentral.TabIndex = 0;
-            this.lblTituloPanelCentral.Text = "SISTEMA RESERVA HOTELERA";
-            // 
-            // lblCerrarSesion
-            // 
-            this.lblCerrarSesion.AutoSize = true;
-            this.lblCerrarSesion.Location = new System.Drawing.Point(3, 9);
-            this.lblCerrarSesion.Name = "lblCerrarSesion";
-            this.lblCerrarSesion.Size = new System.Drawing.Size(89, 19);
-            this.lblCerrarSesion.TabIndex = 19;
-            this.lblCerrarSesion.Text = "Cerrar sesion";
-            this.lblCerrarSesion.Click += new System.EventHandler(this.lblCerrarSesion_Click);
+            this.lblTituloPanelCentral.Size = new System.Drawing.Size(100, 23);
+            this.lblTituloPanelCentral.TabIndex = 2;
             // 
             // FormCafeteriaMarte
             // 
@@ -320,7 +346,6 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoCerrar)).EndInit();
             this.panelContenedor.ResumeLayout(false);
-            this.panelContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -344,11 +369,13 @@ namespace CapaPresentacion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAdministrador;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTipoHabitacion;
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTituloPanelCentral;
         private System.Windows.Forms.Label lblCerrarSesion;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Panel panel6;
     }
 }
 

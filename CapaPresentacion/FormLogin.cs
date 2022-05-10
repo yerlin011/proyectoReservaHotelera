@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,6 +19,11 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
@@ -70,6 +76,28 @@ namespace CapaPresentacion
 
                 MessageBox.Show("Error" + E.Message);
             }
+        }
+
+        private void FormLogin_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panelLogin_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

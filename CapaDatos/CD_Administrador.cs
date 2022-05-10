@@ -34,6 +34,7 @@ namespace CapaDatos
 
         }
 
+      
         /// <summary>
         /// Metodo. permite insertar un nuevo registro en la tabla Administrador
         /// </summary>

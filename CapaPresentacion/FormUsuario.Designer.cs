@@ -35,6 +35,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,11 +129,22 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "______________________________";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(315, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 22);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "USUARIOS";
+            // 
             // FormUsuario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(783, 601);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridViewUsuarios);
@@ -162,5 +174,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label2;
     }
 }

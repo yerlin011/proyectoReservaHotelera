@@ -118,8 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icono-cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icono-cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="x-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\x-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2085" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2085.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="editar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,34 +130,37 @@
   <data name="002-floppy-disk1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-floppy-disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="x-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\x-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eliminar-foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eliminar-foto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icono-cliente1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icono-cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="002-floppy-disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\002-floppy-disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="editar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="interruptor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\interruptor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eliminar-foto1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eliminar-foto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="interruptor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\interruptor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono-cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono-cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20851" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20851.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minimize (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimize (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2085" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2085.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icono-cliente1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono-cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eliminar-foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eliminar-foto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="interruptor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\interruptor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="002-floppy-disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\002-floppy-disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="interruptor (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\interruptor (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

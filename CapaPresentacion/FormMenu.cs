@@ -159,16 +159,11 @@ namespace CapaPresentacion
         {
             panelSideMenu.Height = btnHotel.Height;
             panelSideMenu.Top = btnHotel.Top;
-           // AbrirFrmHija(new FormFactura());
+            AbrirFrmHija(new FormHoteles());
         }
 
       
-        private void btnClientes_Click(object sender, EventArgs e)
-        {
-            panelSideMenu.Height = btnReserva.Height;
-            panelSideMenu.Top = btnReserva.Top;
-           // AbrirFrmHija(new FormClientes());
-        }
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -205,6 +200,26 @@ namespace CapaPresentacion
             AbrirFrmHija(new FormAdministradores());
         }
 
+        private void btnClientes_Click_1(object sender, EventArgs e)
+        {
+            panelSideMenu.Height = btnClientes.Height;
+            panelSideMenu.Top = btnClientes.Top;
+            AbrirFrmHija(new FormClientes());
+        }
+
+        private void btnTipoHabitacion_Click(object sender, EventArgs e)
+        {
+            panelSideMenu.Height = btnTipoHabitacion.Height;
+            panelSideMenu.Top = btnTipoHabitacion.Top;
+            AbrirFrmHija(new FormTipoHabitaciones());
+        }
+        private void btnReserva_Click(object sender, EventArgs e)
+        {
+            panelSideMenu.Height = btnReserva.Height;
+            panelSideMenu.Top = btnReserva.Top;
+            AbrirFrmHija(new FormReservas());
+        }
+
         private void lblCerrarSesion_Click(object sender, EventArgs e)
         {
             DialogResult resultAccion = MessageBox.Show("¿Estas seguro de que desea salir?",
@@ -217,5 +232,7 @@ namespace CapaPresentacion
                 frmLogin.ShowDialog();
             }
         }
+
+       
     }
 }

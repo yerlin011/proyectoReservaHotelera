@@ -4,10 +4,37 @@
     <Compile Update="FormAdministradores.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMantReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTipoHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormHabitacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormMantAdministradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMantTipoHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMantCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMantHotel.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormMantHabitacion.cs">
@@ -22,11 +49,13 @@
     <Compile Update="FormUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="DataSetReportes.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
 </Project>

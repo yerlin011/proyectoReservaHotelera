@@ -23,6 +23,8 @@ namespace CapaNegocio
             tabla = objetoCD.ListarAdministradores();
             return tabla;
         }
+
+       
         /// <summary>
         /// Metodo. Permite insertar, al pasar los valores como parametros en el metodo Insertar() de la capa de datos. 
         /// </summary>
